@@ -36,7 +36,7 @@ function App() {
 
   useEffect(() => {
     fetchMoviesHandler();
-  }, []);
+  }, [fetchMoviesHandler]);
 
   let content = <p>found no movies.</p>;
   if (movies.length > 0) {
